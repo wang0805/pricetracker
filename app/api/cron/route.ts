@@ -11,6 +11,8 @@ import Product from "@/lib/models/product.model";
 import { scrapeAmazonProduct } from "@/lib/scraper";
 import { generateEmailBody, sendEmail } from "@/lib/nodemailer";
 
+// routing settings
+//This is because the pages/api directory is a special directory in Next.js that is used for API routes. When a request is made to an API route, the request is handled by the function that is exported from the corresponding file.
 export const maxDuration = 10; // This function can run for a maximum of 300 seconds
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
